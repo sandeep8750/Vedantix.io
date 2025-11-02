@@ -154,22 +154,21 @@ export default function CareersPage() {
       </section>
 
       {/* Job Listings */}
+{/* 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <h2 className="text-4xl font-bold mb-8">Open Positions</h2>
 
-            {/* Department Filter */}
             <div className="flex flex-wrap gap-3">
               {departments.map((dept) => (
                 <button
                   key={dept}
                   onClick={() => setFilteredJobs(dept === "All" ? null : dept)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    (dept === "All" && !filteredJobs) || filteredJobs === dept
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-card border border-border text-foreground hover:border-primary/50"
-                  }`}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(dept === "All" && !filteredJobs) || filteredJobs === dept
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-card border border-border text-foreground hover:border-primary/50"
+                    }`}
                 >
                   {dept}
                 </button>
@@ -230,7 +229,9 @@ export default function CareersPage() {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
+
+
 
       {/* Internship Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border bg-background/40">

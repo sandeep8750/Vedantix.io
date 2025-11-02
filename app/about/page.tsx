@@ -23,48 +23,42 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border bg-background/40">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Text Column */}
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-foreground/70">
                 <p>
-                  Founded in 2020, Vedantix emerged from a simple insight: businesses struggle to find exceptional
-                  talent, and talented professionals struggle to find the right opportunities. We set out to bridge that
-                  gap.
+                  Founded in 2020, Vedantix emerged from a simple insight: businesses struggle to find
+                  exceptional talent, and talented professionals struggle to find the right opportunities.
+                  We set out to bridge that gap.
                 </p>
                 <p>
-                  What started as a small recruiting team has grown into a global organization serving enterprise
-                  companies, startups, and everything in between. Today, we're proud to have placed over 1,000
-                  professionals and completed 150+ development projects.
+                  What started as a small recruiting team has grown into a global organization serving
+                  enterprise companies, startups, and everything in between. Today, we're proud to have
+                  placed over 1,000 professionals and completed 150+ development projects.
                 </p>
                 <p>
-                  Our mission remains unchanged: to bring world-class talent and solutions to businesses worldwide,
-                  enabling them to grow, innovate, and succeed.
+                  Our mission remains unchanged: to bring world-class talent and solutions to businesses
+                  worldwide, enabling them to grow, innovate, and succeed.
                 </p>
               </div>
             </div>
 
+            {/* Image Column */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl"></div>
-              <div className="relative bg-card border border-border rounded-2xl p-8">
-                <div className="space-y-8">
-                  <div>
-                    <p className="text-5xl font-bold text-primary mb-2">1000+</p>
-                    <p className="text-foreground/70">Professionals Placed</p>
-                  </div>
-                  <div>
-                    <p className="text-5xl font-bold text-secondary mb-2">150+</p>
-                    <p className="text-foreground/70">Projects Completed</p>
-                  </div>
-                  <div>
-                    <p className="text-5xl font-bold text-accent mb-2">50+</p>
-                    <p className="text-foreground/70">Countries Served</p>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="/Gemini_Generated_Image_eu7eqfeu7eqfeu7e.png"
+                alt="Professional team working together"
+                className="relative rounded-2xl border border-border object-cover w-full h-[450px]"
+              />
             </div>
+
           </div>
         </div>
       </section>
+
 
       {/* Mission, Vision, Values */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
@@ -166,7 +160,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Our Leadership</h2>
@@ -191,7 +185,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border bg-background/40">
@@ -201,11 +195,11 @@ export default function AboutPage() {
             Whether you're looking to grow your team or launch your next project, we're here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 glow-primary" asChild>
+            {/* <Button size="lg" className="bg-primary hover:bg-primary/90 glow-primary" asChild>
               <Link href="/careers">
                 View Careers <ArrowRight size={20} />
               </Link>
-            </Button>
+            </Button> */}
             <Button
               size="lg"
               variant="outline"

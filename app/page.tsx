@@ -28,7 +28,7 @@ export default function Home() {
               <div className="px-4 py-2 rounded-full bg-primary/15 border border-primary/40 text-sm font-semibold text-primary hover-scale cursor-default backdrop-blur-sm">
                 <span className="inline-flex items-center gap-2">
                   <span className="inline-block w-2 h-2 bg-primary rounded-full animate-glow-pulse"></span>
-                  Trusted by 200+ Companies Globally
+                  Trusted by Companies Worldwide
                 </span>
               </div>
             </div>
@@ -80,21 +80,21 @@ export default function Home() {
                   <div className="w-8 h-8 rounded-full bg-primary/25 flex items-center justify-center">
                     <span className="text-primary font-bold text-sm">✓</span>
                   </div>
-                  <span className="text-foreground/80 font-medium">500+ Vetted Talent</span>
+                  <span className="text-foreground/80 font-medium">Specialized AI & Tech Talent</span>
                 </div>
                 <div className="hidden sm:block w-px h-8 bg-gradient-to-b from-primary to-secondary opacity-50"></div>
                 <div className="flex items-center gap-3 bg-secondary/10 px-4 py-3 rounded-lg border border-secondary/20">
                   <div className="w-8 h-8 rounded-full bg-secondary/25 flex items-center justify-center">
                     <span className="text-secondary font-bold text-sm">✓</span>
                   </div>
-                  <span className="text-foreground/80 font-medium">200+ Projects Delivered</span>
+                  <span className="text-foreground/80 font-medium">Outcome-Driven Engagement</span>
                 </div>
                 <div className="hidden sm:block w-px h-8 bg-gradient-to-b from-secondary to-accent opacity-50"></div>
                 <div className="flex items-center gap-3 bg-accent/10 px-4 py-3 rounded-lg border border-accent/20">
                   <div className="w-8 h-8 rounded-full bg-accent/25 flex items-center justify-center">
                     <span className="text-accent font-bold text-sm">✓</span>
                   </div>
-                  <span className="text-foreground/80 font-medium">1M+ Verified Records</span>
+                  <span className="text-foreground/80 font-medium">Continuous Support</span>
                 </div>
               </div>
             </div>
@@ -276,19 +276,19 @@ export default function Home() {
                   "Vedantix connected us with exceptional talent within weeks. The quality exceeded our expectations.",
                 author: "Sarah Chen",
                 role: "CTO",
-                company: "PayFlow Inc.",
+                company: "Fintech",
               },
               {
                 quote: "Their development team delivered our enterprise system on time and with outstanding quality.",
                 author: "Michael Torres",
                 role: "VP Engineering",
-                company: "Global Health Systems",
+                company: "Healthcare",
               },
               {
                 quote: "The B2B database accuracy and support are unmatched. ROI was immediate and significant.",
                 author: "Jennifer Liu",
                 role: "Sales Director",
-                company: "Enterprise Solutions Co.",
+                company: "Enterprise Solutions",
               },
             ].map((testimonial, i) => (
               <div

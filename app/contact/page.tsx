@@ -10,6 +10,59 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { useState } from "react"
 
 export default function ContactPage() {
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   company: "",
+  //   phone: "",
+  //   subject: "",
+  //   message: "",
+  // })
+  // const [submitted, setSubmitted] = useState(false)
+
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   const { name, value } = e.target
+  //   setFormData((prev) => ({ ...prev, [name]: value }))
+  // }
+
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault()
+  //   // Simulate form submission
+  //   setSubmitted(true)
+  //   setTimeout(() => {
+  //     setFormData({ name: "", email: "", company: "", phone: "", subject: "", message: "" })
+  //     setSubmitted(false)
+  //   }, 3000)
+  // }
+
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxsD_gjkZQSTGpWqQQUv0CcbW1n1n5rAChvmfZ1F8j4KS6HHDCgnjHeMySlGAIkh7FJiQ/exec"; // <-- Replace this
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitted(false);
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+
+      setSubmitted(true);
+
+      // Reset fields after success
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an issue submitting the form. Please try again!");
+    }
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,23 +70,14 @@ export default function ContactPage() {
     phone: "",
     subject: "",
     message: "",
-  })
-  const [submitted, setSubmitted] = useState(false)
+  });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Simulate form submission
-    setSubmitted(true)
-    setTimeout(() => {
-      setFormData({ name: "", email: "", company: "", phone: "", subject: "", message: "" })
-      setSubmitted(false)
-    }, 3000)
-  }
 
   return (
     <div className="min-h-screen bg-background">
