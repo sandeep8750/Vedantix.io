@@ -21,9 +21,22 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-background/70 backdrop-blur-md border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-            Vedantix
-          </Link>
+
+          {/* Logo */}
+            <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition">
+              <img
+                src="/logo7.png"
+                alt="Vedantix logo"
+                width={120}
+                height={40}
+                className="object-contain"
+              />
+              {/* <span className="text-xl font-bold text-primary">
+                Vedantix
+              </span> */}
+            </Link>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
