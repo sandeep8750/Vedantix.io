@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl"></div>
               <img
-                src="/Gemini_Generated_Image_eu7eqfeu7eqfeu7e.png"
+                src="/OurStory.png"
                 alt="Professional team working together"
                 className="relative rounded-2xl border border-border object-cover w-full h-[450px]"
               />
