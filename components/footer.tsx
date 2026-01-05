@@ -56,6 +56,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-foreground/60">
               <li>Email: info@vedantix.io</li>
               <li>Phone: +91-8510870477</li>
+              
             </ul>
           </div>
         </div>
