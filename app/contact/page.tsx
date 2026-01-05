@@ -243,7 +243,7 @@ export default function ContactPage() {
 
             {/* Office Hours & Info */}
             <div className="space-y-8">
-              <div className="bg-card border border-border rounded-xl p-8">
+              {/* <div className="bg-card border border-border rounded-xl p-8">
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                   <Clock className="text-accent" size={24} />
                 </div>
@@ -262,7 +262,7 @@ export default function ContactPage() {
                     <span className="font-medium">Closed</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-card border border-border rounded-xl p-8">
                 <h3 className="text-lg font-bold mb-4">Quick Response</h3>
@@ -290,7 +290,7 @@ export default function ContactPage() {
       </section>
 
       {/* Office Locations */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border bg-background/40">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border bg-background/40">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Global Presence</h2>
@@ -344,7 +344,7 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
