@@ -226,12 +226,12 @@ export default function Home() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background/40">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: Users, label: "Expert Talent", value: "500+", desc: "Vetted professionals" },
               { icon: TrendingUp, label: "Success Rate", value: "98%", desc: "Client satisfaction" },
               { icon: Rocket, label: "Fast Delivery", value: "<7 days", desc: "Average placement" },
-              { icon: Globe, label: "Global Reach", value: "25+", desc: "Countries served" },
+              // { icon: Globe, label: "Global Reach", value: "25+", desc: "Countries served" },
             ].map((stat, i) => {
               const Icon = stat.icon
               return (

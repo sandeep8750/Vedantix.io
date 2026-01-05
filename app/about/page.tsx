@@ -29,7 +29,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-foreground/70">
                 <p>
-                  Founded in 2020, Vedantix emerged from a simple insight: businesses struggle to find
+                  Founded in 2025, Vedantix emerged from a simple insight: businesses struggle to find
                   exceptional talent, and talented professionals struggle to find the right opportunities.
                   We set out to bridge that gap.
                 </p>

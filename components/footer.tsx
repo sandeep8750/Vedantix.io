@@ -55,7 +55,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-foreground">Contact</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
               <li>Email: info@vedantix.io</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>Phone: +91-8510870477</li>
             </ul>
           </div>
         </div>

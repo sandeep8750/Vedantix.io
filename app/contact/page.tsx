@@ -102,19 +102,19 @@ export default function ContactPage() {
                 icon: Mail,
                 title: "Email",
                 value: "info@vedantix.io",
-                desc: "We'll respond within 24 hours",
+                // desc: "We'll respond within 24 hours",
               },
               {
                 icon: Phone,
                 title: "Phone",
-                value: "+1 (555) 123-4567",
-                desc: "Available 9 AM - 6 PM EST",
+                value: "+91-8510870477",
+                // desc: "Available 9 AM - 6 PM IST",
               },
               {
                 icon: MapPin,
                 title: "Headquarters",
-                value: "New York, USA",
-                desc: "With offices in 5+ countries",
+                value: "Gurgram, Haryana India",
+                // desc: "With offices in 5+ countries",
               },
             ].map((contact, i) => (
               <div
@@ -251,11 +251,11 @@ export default function ContactPage() {
                 <div className="space-y-3 text-sm text-foreground/70">
                   <div className="flex justify-between">
                     <span>Monday - Friday</span>
-                    <span className="font-medium">9 AM - 6 PM EST</span>
+                    <span className="font-medium">9 AM - 6 PM IST</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Saturday</span>
-                    <span className="font-medium">10 AM - 2 PM EST</span>
+                    <span className="font-medium">10 AM - 2 PM IST</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday</span>
@@ -274,7 +274,7 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-xl p-8">
+              {/* <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-xl p-8">
                 <h3 className="text-lg font-bold mb-2">Urgent Matter?</h3>
                 <p className="text-sm text-foreground/70 mb-4">Call us directly for immediate assistance</p>
                 <a
@@ -283,7 +283,7 @@ export default function ContactPage() {
                 >
                   +1 (555) 123-4567
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
