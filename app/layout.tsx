@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Bringing Experts to Your Doorstep - Premium IT Staffing, Web & App Development, and B2B Database Services",
   generator: "v0.app",
+  icons: {
+    icon: "/newlogo.png",
+  },
 }
 
 export default function RootLayout({
