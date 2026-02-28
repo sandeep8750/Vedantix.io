@@ -154,7 +154,7 @@ export default function CareersPage() {
       </section>
 
       {/* Job Listings */}
-{/* 
+
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/20 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
@@ -229,7 +229,7 @@ export default function CareersPage() {
             </div>
           )}
         </div>
-      </section> */}
+      </section>
 
 
 

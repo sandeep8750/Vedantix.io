@@ -50,7 +50,7 @@ export default function ServicesPage() {
               </div>
 
               <Button size="lg" className="bg-primary hover:bg-primary/90 glow-primary" asChild>
-                <Link href="/contact">
+                <Link href="/contact#contact-form">
                   Start Hiring <ArrowRight size={20} />
                 </Link>
               </Button>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
               </div>
 
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
-                <Link href="/contact">
+                <Link href="/contact#contact-form">
                   Start a Project <ArrowRight size={20} />
                 </Link>
               </Button>
@@ -176,7 +176,7 @@ export default function ServicesPage() {
               </div>
 
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-                <Link href="/contact">
+                <Link href="/contact#contact-form">
                   Explore Database <ArrowRight size={20} />
                 </Link>
               </Button>
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                 <div className="space-y-6">
                   {[
                     { icon: Database, label: "10M+ Records", value: "Comprehensive Coverage" },
-                    { icon: Shield, label: "99.9% Accuracy", value: "Verified & Updated Daily" },
+                    { icon: Shield, label: "98% Accuracy", value: "Verified & Updated Daily" },
                     { icon: BarChart3, label: "Advanced Filtering", value: "Segment by 50+ Criteria" },
                   ].map((stat, i) => (
                     <div key={i} className="flex items-start gap-4">
@@ -248,7 +248,7 @@ export default function ServicesPage() {
             Choose your service and let our experts help you achieve your business goals.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 glow-primary" asChild>
-            <Link href="/contact">
+            <Link href="/contact#contact-form">
               Schedule Consultation <ArrowRight size={20} />
             </Link>
           </Button>
