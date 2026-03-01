@@ -51,26 +51,29 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-              <button className="h-13 px-8 text-base font-semibold rounded-lg button-gradient text-white hover:shadow-2xl hover:shadow-primary/40 transition-all duration-300 hover-scale border border-primary/30">
-                <div className="flex items-center justify-center gap-2">
-                  <Briefcase size={20} />
-                  Hire Talent
-                </div>
-              </button>
+              <Link
+                href="/contact?subject=hire#contact-form"
+                className="h-13 px-8 text-base font-semibold rounded-lg button-gradient text-white hover:shadow-2xl hover:shadow-primary/40 transition-all duration-300 hover-scale border border-primary/30 flex items-center justify-center gap-2"
+              >
+                <Briefcase size={20} />
+                Hire Talent
+              </Link>
 
-              <button className="h-13 px-8 text-base font-semibold rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/15 transition-all duration-300 hover-scale backdrop-blur-sm">
-                <div className="flex items-center justify-center gap-2">
-                  <Code size={20} />
-                  Build Your Project
-                </div>
-              </button>
+              <Link
+                href="/contact?subject=develop#contact-form"
+                className="h-13 px-8 text-base font-semibold rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/15 transition-all duration-300 hover-scale backdrop-blur-sm flex items-center justify-center gap-2"
+              >
+                <Code size={20} />
+                Build Your Project
+              </Link>
 
-              <button className="h-13 px-8 text-base font-semibold rounded-lg button-gradient-accent text-white hover:shadow-2xl hover:shadow-accent/40 transition-all duration-300 hover-scale border border-accent/30">
-                <div className="flex items-center justify-center gap-2">
-                  <Database size={20} />
-                  Get B2B Database
-                </div>
-              </button>
+              <Link
+                href="/contact?subject=database#contact-form"
+                className="h-13 px-8 text-base font-semibold rounded-lg button-gradient-accent text-white hover:shadow-2xl hover:shadow-accent/40 transition-all duration-300 hover-scale border border-accent/30 flex items-center justify-center gap-2"
+              >
+                <Database size={20} />
+                Get B2B Database
+              </Link>
             </div>
 
             {/* Trust Indicators */}
@@ -329,7 +332,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="h-12 px-10 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover-scale shadow-lg shadow-primary/20">
-              Schedule Demo
+              <Link href="/contact?subject=develop#contact-form">
+                Schedule Demo
+              </Link>
             </button>
             <button className="h-12 px-10 text-base font-semibold rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/10 transition-all duration-300 hover-scale">
               <Link href="/contact" className="flex items-center justify-center gap-2">
