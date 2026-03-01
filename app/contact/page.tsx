@@ -55,9 +55,11 @@ function ContactContent() {
   //   }, 3000)
   // }
 
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxsD_gjkZQSTGpWqQQUv0CcbW1n1n5rAChvmfZ1F8j4KS6HHDCgnjHeMySlGAIkh7FJiQ/exec"; // <-- Replace this
+  const [isLoading, setIsLoading] = useState(false);
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby9tXPvgUf3Tv3-q3dUFuiBMGPsui8plTz6x_fI7jm71-mMMkbXcfcr-uLwkddULBaWzg/exec";
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
     setSubmitted(false);
 
     try {
@@ -67,19 +69,15 @@ function ContactContent() {
       });
 
       setSubmitted(true);
+      setFormData({ name: "", email: "", company: "", phone: "", subject: "", message: "" });
 
-      // Reset fields after success
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
+      // Re-enable button after 4s so user can send another message
+      setTimeout(() => setSubmitted(false), 4000);
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("There was an issue submitting the form. Please try again!");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -289,9 +287,9 @@ function ContactContent() {
                   type="submit"
                   size="lg"
                   className="w-full md:w-auto bg-primary hover:bg-primary/90 glow-primary"
-                  disabled={submitted}
+                  disabled={isLoading}
                 >
-                  {submitted ? "Message Sent!" : "Send Message"}
+                  {isLoading ? "Sending..." : submitted ? "Message Sent! ✓" : "Send Message"}
                 </Button>
 
                 {submitted && (
