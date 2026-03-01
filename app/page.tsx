@@ -332,7 +332,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="h-12 px-10 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover-scale shadow-lg shadow-primary/20">
-              Schedule Demo
+              <Link href="/contact?subject=develop#contact-form">
+                Schedule Demo
+              </Link>
             </button>
             <button className="h-12 px-10 text-base font-semibold rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/10 transition-all duration-300 hover-scale">
               <Link href="/contact" className="flex items-center justify-center gap-2">

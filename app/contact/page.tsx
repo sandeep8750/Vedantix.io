@@ -29,7 +29,15 @@ export default function ContactPage() {
   )
 }
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 function ContactContent() {
+  // ... (previous state and handlers)
   // const [formData, setFormData] = useState({
   //   name: "",
   //   email: "",
@@ -411,31 +419,51 @@ function ContactContent() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
 
-          <div className="space-y-6">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {[
+              {
+                q: "How quickly can I hire top talent through Vedantix?",
+                a: "You'll receive shortlisted profiles of pre-vetted talent within 48 hours.",
+              },
               {
                 q: "How long does the hiring process take?",
                 a: "Typically 2-4 weeks from initial consultation to candidate placement. Expedited options available for urgent needs.",
               },
               {
-                q: "What's your success rate?",
-                a: "We maintain a 95%+ client satisfaction rate with long-term placements averaging 2+ years tenure.",
+                q: "What engagement models does Vedantix offer?",
+                a: "We offer two simple models: full-time hiring and contract hiring.",
+              },
+              {
+                q: "How is full-time hiring different from contract hiring?",
+                a: "Full-time hiring means we help you find professionals who become a direct part of your team and work as your employees.Contract hiring gives you flexibility - Vedantix manages payroll, compliance, and paperwork, while you focus on scaling your business.",
+              },
+              {
+                q: "What roles can I hire for through Vedantix?",
+                a: "You can hire 100+ roles, including software engineers, product designers, marketers, AI specialists, and other tech roles.",
               },
               {
                 q: "Do you offer remote staffing?",
                 a: "Yes! We connect global talent for remote positions, hybrid arrangements, and on-site roles.",
               },
               {
-                q: "What industries do you serve?",
-                a: "We specialize in Tech, Finance, Healthcare, E-commerce, and serve both Startups and Fortune 500 companies.",
+                q: "What happens if I'm not satisfied with the talent?",
+                a: "Full-time hires: You get a 90-day free replacement. Contract hires: You get lifetime free replacements, at no extra cost.",
+              },
+              {
+                q: "What time zones can your talents cover?",
+                a: "We can help you find people that are flexible and experienced in working across global time zones. Whether youre in the US, UK, Europe, or Australia, they can align with your preferred schedule.",
               },
             ].map((faq, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-6">
-                <h4 className="font-semibold mb-2 text-lg">{faq.q}</h4>
-                <p className="text-foreground/70">{faq.a}</p>
-              </div>
+              <AccordionItem key={i} value={`item-${i}`} className="bg-card border border-border rounded-lg px-6 overflow-hidden">
+                <AccordionTrigger className="hover:no-underline py-4">
+                  <span className="font-semibold text-left text-lg pr-4">{faq.q}</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-foreground/70 pb-6 pt-2 border-t border-border/10">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
+          </Accordion>
         </div>
       </section>
 
