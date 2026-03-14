@@ -135,7 +135,7 @@ function ContactContent() {
               {
                 icon: Mail,
                 title: "Email",
-                value: ["info@vedantix.io", "hr@vedantix.io"],
+                value: ["info@vedantix.io"],
                 // desc: "We'll respond within 24 hours",
               },
               {

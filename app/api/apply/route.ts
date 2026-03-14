@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const RECIPIENT_EMAIL = "hr@vedantix.io";
+const RECIPIENT_EMAIL = "info@vedantix.io";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function POST(req: Request) {
@@ -183,7 +183,7 @@ export async function POST(req: Request) {
 </html>`;
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.zoho.in", // use smtp.zoho.com if your account is .com
+      host: "smtp.gmail.com", // use smtp.gmail.com since credentials are for gmail
       port: 465,
       secure: true, // SSL
       auth: { user: emailUser, pass: emailPass },

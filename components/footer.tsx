@@ -107,7 +107,6 @@ export function Footer() {
                 <Mail size={18} className="text-primary shrink-0" />
                 <div className="flex flex-col gap-1.5">
                   <a href="mailto:info@vedantix.io" className="hover:text-primary transition-colors">info@vedantix.io</a>
-                  <a href="mailto:hr@vedantix.io" className="hover:text-primary transition-colors">hr@vedantix.io</a>
                 </div>
               </li>
               <li className="flex gap-3">

@@ -89,7 +89,7 @@ export function JobBoard({ initialJobs, departments }: JobBoardProps) {
               onClick={() => handleApply(job)}
               className="bg-primary hover:bg-primary/90 w-full md:w-auto"
             >
-              View & Apply <ArrowRight size={16} className="ml-2" />
+              Apply <ArrowRight size={16} className="ml-2" />
             </Button>
           </div>
         ))}
